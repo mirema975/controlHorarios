@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HorariosLaborales</string>
+    <string name="btnAgregar">Agregar</string>
+    <string name="btnEditar">Editar</string>
+    <string name="btnVerEditar">Ver/Editar</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="dosPuntos">:</string>
+    <string name="labelIngreso">Ingreso</string>
+    <string name="labelSalida">Salida</string>
+    <string name="labelFecha">Fecha</string>
+    <string name="labelDobleTurno">Doble Turno</string>
+    <string name="btnAgregarDato">Agregar</string>
+    <string name="btnIngresoActual">Ingreso Actual</string>
+    <string name="btnSalidaActual">Salida Actual</string>
+    <string name="btnGuardar">Guardar</string>
+
+</resources>

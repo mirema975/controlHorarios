@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivityAgregar">
+
+    <TextView
+        android:id="@+id/textView_Fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/labelFecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_dia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Fecha" />
+
+    <Spinner
+        android:id="@+id/spinner_mes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:background="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/spinner_dia"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Fecha" />
+
+    <Spinner
+        android:id="@+id/spinner_anio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:background="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/spinner_mes"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Fecha" />
+
+    <TextView
+        android:id="@+id/label_ingreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/labelIngreso"
+        app:layout_constraintEnd_toEndOf="@+id/input_min_ingreso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_dia" />
+
+    <EditText
+        android:id="@+id/input_hs_ingreso"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:width="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_ingreso" />
+
+    <TextView
+        android:id="@+id/tv_dosPuntos_ingreso1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:text="@string/dosPuntos"
+        app:layout_constraintBottom_toBottomOf="@+id/input_hs_ingreso"
+        app:layout_constraintStart_toEndOf="@+id/input_hs_ingreso"
+        app:layout_constraintTop_toTopOf="@+id/input_hs_ingreso" />
+
+    <EditText
+        android:id="@+id/input_min_ingreso"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:width="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tv_dosPuntos_ingreso1"
+        app:layout_constraintTop_toBottomOf="@+id/label_ingreso" />
+
+    <TextView
+        android:id="@+id/label_salida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/labelSalida"
+        app:layout_constraintEnd_toEndOf="@+id/input_min_salida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_hs_ingreso" />
+
+    <EditText
+        android:id="@+id/input_hs_salida"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_salida" />
+
+    <TextView
+        android:id="@+id/tv_dosPuntos_salida1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:text="@string/dosPuntos"
+        app:layout_constraintBottom_toBottomOf="@+id/input_hs_salida"
+        app:layout_constraintStart_toEndOf="@+id/input_hs_salida"
+        app:layout_constraintTop_toTopOf="@+id/input_hs_salida" />
+
+    <EditText
+        android:id="@+id/input_min_salida"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:width="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tv_dosPuntos_salida1"
+        app:layout_constraintTop_toBottomOf="@+id/label_salida" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/labelDobleTurno"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/input_min_ingreso2"
+        app:layout_constraintStart_toStartOf="@+id/input_hs_ingreso2"
+        app:layout_constraintTop_toBottomOf="@+id/input_hs_salida" />
+
+    <TextView
+        android:id="@+id/label_ingreso_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/labelIngreso"
+        app:layout_constraintEnd_toEndOf="@+id/input_min_ingreso2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/input_hs_ingreso2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_ingreso_2" />
+
+    <TextView
+        android:id="@+id/tv_dosPuntos_ingreso2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:text="@string/dosPuntos"
+        app:layout_constraintBottom_toBottomOf="@+id/input_hs_ingreso2"
+        app:layout_constraintStart_toEndOf="@+id/input_hs_ingreso2"
+        app:layout_constraintTop_toTopOf="@+id/input_hs_ingreso2" />
+
+    <EditText
+        android:id="@+id/input_min_ingreso2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tv_dosPuntos_ingreso2"
+        app:layout_constraintTop_toBottomOf="@+id/label_ingreso_2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/labelSalida"
+        app:layout_constraintEnd_toEndOf="@+id/input_min_salida2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_hs_ingreso2" />
+
+    <EditText
+        android:id="@+id/input_hs_salida2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/tv_dosPuntos_salida2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:text="@string/dosPuntos"
+        app:layout_constraintBottom_toBottomOf="@+id/input_hs_salida2"
+        app:layout_constraintStart_toEndOf="@+id/input_hs_salida2"
+        app:layout_constraintTop_toTopOf="@+id/input_hs_salida2" />
+
+    <EditText
+        android:id="@+id/input_min_salida2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tv_dosPuntos_salida2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnSalidaActual2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@+id/input_min_salida2"
+        android:onClick="setSalidaActual2"
+        android:text="@string/btnSalidaActual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_min_salida2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnIngresoActual2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@+id/input_min_ingreso2"
+        android:onClick="setIngresoActual2"
+        android:text="@string/btnIngresoActual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_min_ingreso2"
+        app:layout_constraintTop_toBottomOf="@+id/label_ingreso_2" />
+
+    <Button
+        android:id="@+id/btnEditarDato"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="agregar"
+        android:text="@string/btnAgregar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ingresoActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@+id/input_min_ingreso"
+        android:onClick="setIngresoActual"
+        android:text="@string/btnIngresoActual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_min_ingreso"
+        app:layout_constraintTop_toBottomOf="@+id/label_ingreso" />
+
+    <Button
+        android:id="@+id/salidaActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@+id/input_min_salida"
+        android:onClick="setSalidaActual"
+        android:text="@string/btnSalidaActual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_min_salida"
+        app:layout_constraintTop_toBottomOf="@+id/label_salida" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
